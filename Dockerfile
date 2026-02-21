@@ -16,7 +16,8 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED=1
-RUN pnpm build
+ENV DATABASE_URL=file:./db/github-wrapped.db
+RUN mkdir -p /app/db && pnpm build
 
 # --- Production ---
 FROM node:20-alpine AS runner
