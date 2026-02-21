@@ -7,10 +7,10 @@ interface PeriodSelectorProps {
 }
 
 const PERIOD_OPTIONS = [
-  { label: "Ultimo mes", days: 30 },
-  { label: "Ultimos 3 meses", days: 90 },
-  { label: "Ultimos 6 meses", days: 180 },
-  { label: "Ultimo ano", days: 365 },
+  { label: "Último mês", days: 30 },
+  { label: "Últimos 3 meses", days: 90 },
+  { label: "Últimos 6 meses", days: 180 },
+  { label: "Último ano", days: 365 },
 ] as const;
 
 function formatDate(date: Date): string {

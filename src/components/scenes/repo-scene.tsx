@@ -19,7 +19,7 @@ export function RepoScene({ repos, newCreated, starsReceived }: RepoSceneProps) 
         transition={{ duration: 0.4 }}
         className="text-xl font-bold text-white/90"
       >
-        Repositorios
+        Repositórios
       </motion.h2>
 
       {featured && (

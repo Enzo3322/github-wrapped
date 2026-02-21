@@ -110,7 +110,7 @@ export default function DashboardPage() {
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          Ola,{" "}
+          Olá,{" "}
           <span className="bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
             {session.user.name ?? "dev"}
           </span>
@@ -118,7 +118,7 @@ export default function DashboardPage() {
         </h1>
 
         <p className="mt-2 text-gray-400">
-          Selecione um periodo para gerar sua retrospectiva
+          Selecione um período para gerar sua retrospectiva
         </p>
       </motion.div>
 
@@ -129,7 +129,7 @@ export default function DashboardPage() {
         transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
       >
         <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gray-500">
-          Periodo
+          Período
         </h2>
         <PeriodSelector onSelect={handlePeriodSelect} />
 
@@ -156,7 +156,7 @@ export default function DashboardPage() {
         transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
       >
         <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-gray-500">
-          Historico
+          Histórico
         </h2>
 
         {historyLoading ? (

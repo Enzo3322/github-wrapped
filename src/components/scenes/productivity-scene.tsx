@@ -67,7 +67,7 @@ export function ProductivityScene({ hourlyDistribution, message }: ProductivityS
         transition={{ duration: 0.5, delay: 1 }}
         className="text-center text-sm font-medium text-violet-400"
       >
-        Pico as {peakHour}h
+        Pico às {peakHour}h
       </motion.p>
 
       <motion.p

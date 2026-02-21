@@ -117,7 +117,7 @@ function StaticRepo({ repos, newCreated, starsReceived }: { repos: GitHubData["r
   const top = repos[0];
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", width: "100%", gap: 40, padding: "0 48px", background: "#030712", color: "white" }}>
-      <p style={{ fontSize: 28, fontWeight: 700, color: "rgba(255,255,255,0.9)", margin: 0 }}>Repositorio destaque</p>
+      <p style={{ fontSize: 28, fontWeight: 700, color: "rgba(255,255,255,0.9)", margin: 0 }}>Repositório destaque</p>
       {top && (
         <div style={{ padding: 32, border: "1px solid rgba(255,255,255,0.1)", borderRadius: 16, background: "rgba(255,255,255,0.02)", width: "100%" }}>
           <p style={{ fontSize: 28, fontWeight: 700, color: "#a78bfa", margin: "0 0 12px 0" }}>{top.name}</p>
@@ -144,7 +144,7 @@ function StaticProductivity({ hourlyDistribution, message }: { hourlyDistributio
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", width: "100%", gap: 32, padding: "0 48px", background: "#030712", color: "white" }}>
-      <p style={{ fontSize: 28, fontWeight: 700, color: "rgba(255,255,255,0.9)", margin: 0 }}>Horario mais produtivo</p>
+      <p style={{ fontSize: 28, fontWeight: 700, color: "rgba(255,255,255,0.9)", margin: 0 }}>Horário mais produtivo</p>
       <div style={{ display: "flex", alignItems: "flex-end", gap: 4, height: 200, width: "100%" }}>
         {hourlyDistribution.map((count, hour) => (
           <div key={hour} style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
@@ -156,7 +156,7 @@ function StaticProductivity({ hourlyDistribution, message }: { hourlyDistributio
           </div>
         ))}
       </div>
-      <p style={{ fontSize: 24, fontWeight: 600, color: "#a78bfa", margin: 0 }}>Pico as {peakHour}h</p>
+      <p style={{ fontSize: 24, fontWeight: 600, color: "#a78bfa", margin: 0 }}>Pico às {peakHour}h</p>
       <p style={{ fontSize: 22, color: "rgba(255,255,255,0.7)", margin: 0, textAlign: "center", maxWidth: 800 }}>{message}</p>
     </div>
   );

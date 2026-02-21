@@ -282,7 +282,7 @@ function drawRepo(rc: RenderContext) {
   const { ctx, githubData } = rc;
   const top = githubData.repositories.topContributed[0];
 
-  text(ctx, "Repositorio destaque", CX, 580, 52, WHITE90, 700);
+  text(ctx, "Repositório destaque", CX, 580, 52, WHITE90, 700);
 
   if (top) {
     const cardX = 80;
@@ -318,7 +318,7 @@ function drawProductivity(rc: RenderContext) {
   const max = Math.max(...dist, 1);
   const peakHour = dist.indexOf(Math.max(...dist));
 
-  text(ctx, "Horario mais produtivo", CX, 500, 52, WHITE90, 700);
+  text(ctx, "Horário mais produtivo", CX, 500, 52, WHITE90, 700);
 
   const chartX = 80;
   const chartW = W - 160;
@@ -345,7 +345,7 @@ function drawProductivity(rc: RenderContext) {
     ctx.fill();
   });
 
-  text(ctx, `Pico as ${peakHour}h`, CX, chartY + chartH + 80, 44, "#a78bfa", 600);
+  text(ctx, `Pico às ${peakHour}h`, CX, chartY + chartH + 80, 44, "#a78bfa", 600);
   text(ctx, aiTexts.productivityMessage, CX, chartY + chartH + 180, 38, WHITE70, 400, { wrap: 850 });
 }
 

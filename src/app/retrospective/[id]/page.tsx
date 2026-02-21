@@ -68,13 +68,13 @@ export default function RetrospectivePage({
     try {
       const res = await fetch(`/api/retrospective/${id}`);
       if (!res.ok) {
-        setError(res.status === 404 ? "Retrospectiva nao encontrada" : "Erro ao carregar");
+        setError(res.status === 404 ? "Retrospectiva não encontrada" : "Erro ao carregar");
         return;
       }
       const json = await res.json();
       setData(json);
     } catch {
-      setError("Erro de conexao");
+      setError("Erro de conexão");
     }
   }, [id]);
 

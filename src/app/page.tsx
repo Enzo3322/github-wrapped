@@ -24,7 +24,7 @@ export default function Home() {
 
         <p className="mt-6 max-w-xl text-lg text-gray-400 sm:text-xl">
           Transforme sua atividade no GitHub em uma retrospectiva visual
-          incrivel
+          incrível
         </p>
 
         <div className="mt-10">
