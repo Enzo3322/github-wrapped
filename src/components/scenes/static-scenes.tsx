@@ -53,7 +53,7 @@ function StaticIntro({ username, avatarUrl, periodStart, periodEnd }: { username
       </div>
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 12, textAlign: "center" }}>
         <h1 style={{ fontSize: 48, fontWeight: 800, background: "linear-gradient(to right, #a78bfa, #c084fc, #60a5fa)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", margin: 0 }}>
-          Seu GitHub Wrapped
+          Seu GitHub Profile Analyse
         </h1>
         <p style={{ fontSize: 28, fontWeight: 500, color: "rgba(255,255,255,0.8)", margin: 0 }}>@{username}</p>
       </div>
@@ -202,9 +202,9 @@ function StaticOutro() {
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", width: "100%", gap: 24, background: "#030712", color: "white" }}>
       <h1 style={{ fontSize: 48, fontWeight: 800, background: "linear-gradient(to right, #a78bfa, #c084fc, #60a5fa)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", margin: 0 }}>
-        GitHub Wrapped
+        GitHub Profile Analyse
       </h1>
-      <p style={{ fontSize: 20, color: "rgba(255,255,255,0.5)", margin: 0 }}>Gere o seu em githubwrapped.dev</p>
+      <p style={{ fontSize: 20, color: "rgba(255,255,255,0.5)", margin: 0 }}>Desenvolvido por spag.dev</p>
     </div>
   );
 }

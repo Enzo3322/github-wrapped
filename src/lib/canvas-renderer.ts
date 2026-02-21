@@ -213,7 +213,7 @@ async function drawIntro(rc: RenderContext) {
     ctx.fill();
   }
 
-  gradientText(ctx, "Seu GitHub Wrapped", CX, 920, 80, ["#a78bfa", "#c084fc", "#60a5fa"]);
+  gradientText(ctx, "Seu GitHub Profile Analyse", CX, 920, 80, ["#a78bfa", "#c084fc", "#60a5fa"]);
   text(ctx, `@${githubData.profile.username}`, CX, 1030, 48, "rgba(255,255,255,0.8)", 500);
   text(ctx, `${formatDate(periodStart)} — ${formatDate(periodEnd)}`, CX, 1130, 36, WHITE50);
 }
@@ -388,6 +388,6 @@ function drawPersonality(rc: RenderContext) {
 function drawOutro(rc: RenderContext) {
   const { ctx } = rc;
 
-  gradientText(ctx, "GitHub Wrapped", CX, H / 2 - 40, 84, ["#a78bfa", "#c084fc", "#60a5fa"]);
-  text(ctx, "Gere o seu em githubwrapped.dev", CX, H / 2 + 60, 36, WHITE50);
+  gradientText(ctx, "GitHub Profile Analyse", CX, H / 2 - 40, 84, ["#a78bfa", "#c084fc", "#60a5fa"]);
+  text(ctx, "Desenvolvido por spag.dev", CX, H / 2 + 60, 36, WHITE50);
 }

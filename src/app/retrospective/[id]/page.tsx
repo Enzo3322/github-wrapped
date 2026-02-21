@@ -178,7 +178,7 @@ export default function RetrospectivePage({
       const blob = await captureScene();
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
-      link.download = `github-wrapped-${currentScene + 1}.png`;
+      link.download = `github-profile-analyse-${currentScene + 1}.png`;
       link.href = url;
       link.click();
       URL.revokeObjectURL(url);
@@ -198,8 +198,8 @@ export default function RetrospectivePage({
     setShareError(null);
     try {
       const blob = await captureScene();
-      const file = new File([blob], "github-wrapped.png", { type: "image/png" });
-      await navigator.share({ files: [file], title: "Meu GitHub Wrapped" });
+      const file = new File([blob], "github-profile-analyse.png", { type: "image/png" });
+      await navigator.share({ files: [file], title: "Meu GitHub Profile Analyse" });
     } catch (err) {
       if ((err as Error).name !== "AbortError") {
         console.error("Share failed:", err);

@@ -6,7 +6,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 export async function generateCreativeTexts(data: GitHubData): Promise<AITexts> {
   const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
-  const prompt = `Voce e um narrador criativo e bem-humorado para um "GitHub Wrapped" (retrospectiva anual do desenvolvedor). Gere textos curtos e engracados em portugues brasileiro para cada cena do video.
+  const prompt = `Voce e um narrador criativo e bem-humorado para um "GitHub Profile Analyse" (retrospectiva anual do desenvolvedor). Gere textos curtos e engracados em portugues brasileiro para cada cena do video.
 
 Dados do desenvolvedor @${data.profile.username}:
 - Total de commits: ${data.commits.total}

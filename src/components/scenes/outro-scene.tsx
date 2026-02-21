@@ -12,7 +12,7 @@ export function OutroScene() {
         className="text-3xl font-extrabold tracking-tight"
       >
         <span className="bg-gradient-to-r from-violet-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
-          GitHub Wrapped
+          GitHub Profile Analyse
         </span>
       </motion.h1>
 
@@ -22,8 +22,8 @@ export function OutroScene() {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="text-sm text-white/50"
       >
-        Gere o seu em{" "}
-        <span className="font-medium text-violet-400">githubwrapped.dev</span>
+        Desenvolvido por{" "}
+        <span className="font-medium text-violet-400">spag.dev</span>
       </motion.p>
 
       <motion.div

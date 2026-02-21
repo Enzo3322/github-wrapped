@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GitHub Wrapped",
+  title: "GitHub Profile Analyse",
   description: "Your GitHub year in review",
 };
 

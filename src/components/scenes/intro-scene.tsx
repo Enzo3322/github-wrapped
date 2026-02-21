@@ -39,7 +39,7 @@ export function IntroScene({ username, avatarUrl, periodStart, periodEnd }: Intr
       >
         <h1 className="text-3xl font-extrabold tracking-tight">
           <span className="bg-gradient-to-r from-violet-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
-            Seu GitHub Wrapped
+            Seu GitHub Profile Analyse
           </span>
         </h1>
         <p className="text-lg font-medium text-white/80">@{username}</p>

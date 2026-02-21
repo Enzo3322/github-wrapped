@@ -18,7 +18,7 @@ export default function Home() {
       >
         <h1 className="text-5xl font-extrabold tracking-tight sm:text-7xl">
           <span className="bg-linear-to-r from-violet-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
-            GitHub Wrapped
+            GitHub Profile Analyse
           </span>
         </h1>
 
@@ -35,7 +35,7 @@ export default function Home() {
               href="/dashboard"
               className="inline-flex items-center gap-2 rounded-lg bg-linear-to-r from-violet-600 to-blue-600 px-8 py-3 font-medium text-white shadow-lg shadow-violet-500/20 transition-all hover:shadow-xl hover:shadow-violet-500/30 hover:scale-105 active:scale-100"
             >
-              Ver meu Wrapped
+              Ver minha análise
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
