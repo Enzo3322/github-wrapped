@@ -1,0 +1,1 @@
+Nunca adicione co-authored nos commits.
