@@ -33,13 +33,12 @@ COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-# Drizzle migrations
+# Drizzle migrations & deps
 COPY --from=builder /app/drizzle ./drizzle
-COPY --from=builder /app/drizzle.config.ts ./drizzle.config.ts
-COPY --from=builder /app/src/db ./src/db
-COPY --from=builder /app/node_modules/drizzle-kit ./node_modules/drizzle-kit
 COPY --from=builder /app/node_modules/drizzle-orm ./node_modules/drizzle-orm
 COPY --from=builder /app/node_modules/better-sqlite3 ./node_modules/better-sqlite3
+COPY --from=builder /app/start.sh ./start.sh
+
 # SQLite data directory
 RUN mkdir -p /app/db && chown nextjs:nodejs /app/db
 
@@ -49,4 +48,4 @@ EXPOSE 3000
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 
-CMD ["node", "server.js"]
+CMD ["sh", "start.sh"]
