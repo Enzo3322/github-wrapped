@@ -40,8 +40,6 @@ COPY --from=builder /app/src/db ./src/db
 COPY --from=builder /app/node_modules/drizzle-kit ./node_modules/drizzle-kit
 COPY --from=builder /app/node_modules/drizzle-orm ./node_modules/drizzle-orm
 COPY --from=builder /app/node_modules/better-sqlite3 ./node_modules/better-sqlite3
-COPY --from=builder /app/node_modules/esbuild ./node_modules/esbuild
-
 # SQLite data directory
 RUN mkdir -p /app/db && chown nextjs:nodejs /app/db
 
